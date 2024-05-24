@@ -1,0 +1,15 @@
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\bin\Debug\net6.0\Repositories.deps.json
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\bin\Debug\net6.0\Repositories.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\bin\Debug\net6.0\Repositories.pdb
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.pdb
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\bin\Debug\net6.0\DataAccessObjects.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\bin\Debug\net6.0\DataAccessObjects.pdb
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\Repositories\obj\Debug\net6.0\Reposito.787EC4B2.Up2Date

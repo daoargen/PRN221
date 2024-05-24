@@ -1,0 +1,14 @@
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\bin\Debug\net6.0\DataAccessObjects.deps.json
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\bin\Debug\net6.0\DataAccessObjects.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\bin\Debug\net6.0\DataAccessObjects.pdb
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.csproj.AssemblyReference.cache
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.AssemblyInfoInputs.cache
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.AssemblyInfo.cs
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\refint\DataAccessObjects.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.pdb
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\ref\DataAccessObjects.dll
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\bin\Debug\net6.0\DataAccessObjects.runtimeconfig.json
+D:\Fpt\material\ki7\PRN221\code\DaoLVSE172121_NET1707_A01\DataAccessObjects\obj\Debug\net6.0\DataAccessObjects.genruntimeconfig.cache
