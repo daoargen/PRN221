@@ -1,11 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccessObjects.DAOs
+﻿namespace DataAccessObjects.DAOs
 {
     public class BookingDetailDAO
     {
@@ -16,7 +9,8 @@ namespace DataAccessObjects.DAOs
             {
                 using var context = new FuminiHotelManagementContext();
                 listBookingDetails = context.BookingDetails.ToList();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -30,7 +24,8 @@ namespace DataAccessObjects.DAOs
                 using var context = new FuminiHotelManagementContext();
                 context.BookingDetails.Add(bookingDetail);
                 context.SaveChanges();
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -42,11 +37,11 @@ namespace DataAccessObjects.DAOs
                 using var context = new FuminiHotelManagementContext();
                 context.Entry<BookingDetail>(bookingDetail).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 context.SaveChanges();
-            } 
+            }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-        }     
+        }
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccessObjects.DAOs
+﻿namespace DataAccessObjects.DAOs
 {
     public class CustomerDAO
     {
@@ -56,7 +50,7 @@ namespace DataAccessObjects.DAOs
                 var a = context.Customers.SingleOrDefault(x => customer.CustomerId == x.CustomerId);
                 context.Customers.Remove(a);
                 context.SaveChanges();
-            } 
+            }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
