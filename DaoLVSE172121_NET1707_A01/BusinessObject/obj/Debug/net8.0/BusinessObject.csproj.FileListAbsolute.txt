@@ -1,0 +1,15 @@
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\bin\Debug\net8.0\BusinessObject.deps.json
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\bin\Debug\net8.0\BusinessObject.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\bin\Debug\net8.0\BusinessObject.pdb
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.AssemblyInfoInputs.cache
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.AssemblyInfo.cs
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.sourcelink.json
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\refint\BusinessObject.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.pdb
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\ref\BusinessObject.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\bin\Debug\net8.0\BusinessObject.runtimeconfig.json
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.csproj.AssemblyReference.cache
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\BusinessObject\obj\Debug\net8.0\BusinessObject.genruntimeconfig.cache
