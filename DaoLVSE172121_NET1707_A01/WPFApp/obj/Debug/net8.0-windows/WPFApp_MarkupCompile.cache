@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\App.xaml
-11407045341
+3-224968603
 
-4-1955446187
+6-236318160
 2482094240528
-MainWindow.xaml;
+AdminNarWindow.xaml;MainWindow.xaml;UserNarWindow.xaml;
 
-True
+False
 

@@ -81,3 +81,7 @@ D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\bin\Debu
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\bin\Debug\net8.0-windows\Repositories.pdb
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\WPFApp.csproj.AssemblyReference.cache
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\WPFApp.csproj.Up2Date
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\AdminNarWindow.g.cs
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\UserNarWindow.g.cs
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\AdminNarWindow.baml
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\UserNarWindow.baml

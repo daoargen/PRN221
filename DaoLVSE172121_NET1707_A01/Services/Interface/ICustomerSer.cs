@@ -9,5 +9,7 @@ namespace Services.Interface
         public void DeleteCustomerById(int id);
         public void UpdateCustomer(Customer customer);
         public Customer GetCustomerById(int id);
+        public bool ValidCustomer(string mail, string password);
+        public Customer GetCustomerByMail(string mail);
     }
 }
