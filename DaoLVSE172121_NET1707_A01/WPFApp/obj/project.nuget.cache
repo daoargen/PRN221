@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7WkVYTFbDBXXa+GaT14xexh7LnEXHPaYQlZl4yVA9iYyb+ASC1Tn47OEujQLbBCj/0VxUtJ9WAMoXyqrPtwgUQ==",
+  "dgSpecHash": "0c91ANhLKDVMyegIZHkebNPMZ/MfNKEAIxRYovDDHzd9ZaaTIiQVJGcGauBHKx+MC3cxHEkJ7upXV1WaIcT6NQ==",
   "success": true,
-  "projectFilePath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WPFApp\\WPFApp.csproj",
+  "projectFilePath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\WpfApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

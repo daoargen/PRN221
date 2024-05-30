@@ -1,7 +1,7 @@
 ﻿using BusinessObject;
 using System.Windows;
 
-namespace WPFApp
+namespace WpfApp
 {
     /// <summary>
     /// Interaction logic for UserNarWindow.xaml

@@ -4,7 +4,7 @@ using Services.Interface;
 using System.IO;
 using System.Windows;
 
-namespace WPFApp
+namespace WpfApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -87,7 +87,7 @@ namespace WPFApp
         {
             var currentDirectory = Directory.GetCurrentDirectory();
             var projectDirectory = Directory.GetParent(currentDirectory).Parent.Parent.FullName;
-            var configFilePath = Path.Combine(projectDirectory, "appsettings.json");
+            var configFilePath = System.IO.Path.Combine(projectDirectory, "appsettings.json");
 
             var config = new ConfigurationBuilder()
                 .SetBasePath(projectDirectory)
@@ -109,5 +109,6 @@ namespace WPFApp
             }
             return false;
         }
+
     }
 }

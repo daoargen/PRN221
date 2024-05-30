@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace WPFApp
+namespace WpfApp
 {
     /// <summary>
     /// Interaction logic for AdminNarWindow.xaml
@@ -10,6 +10,7 @@ namespace WPFApp
         public bool isAdmin { get; set; }
         public AdminNarWindow()
         {
+
             InitializeComponent();
         }
     }

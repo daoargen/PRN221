@@ -1,18 +1,18 @@
-﻿WPFApp
+﻿WpfApp
 
 
 winexe
 C#
 .cs
-D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\obj\Debug\net8.0-windows\
-WPFApp
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WpfApp\obj\Debug\net8.0-windows\
+WpfApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WPFApp\App.xaml
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WpfApp\App.xaml
 3-224968603
 
-6-236318160
+6-461795519
 2482094240528
 AdminNarWindow.xaml;MainWindow.xaml;UserNarWindow.xaml;
 

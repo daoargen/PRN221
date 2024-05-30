@@ -3325,11 +3325,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WPFApp\\WPFApp.csproj",
-      "projectName": "WPFApp",
-      "projectPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WPFApp\\WPFApp.csproj",
+      "projectUniqueName": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\WpfApp.csproj",
+      "projectName": "WpfApp",
+      "projectPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\WpfApp.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WPFApp\\obj\\",
+      "outputPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
