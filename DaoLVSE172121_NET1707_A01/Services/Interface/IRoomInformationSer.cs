@@ -1,4 +1,5 @@
 ﻿using BusinessObject;
+using BusinessObject.DTO;
 
 namespace Services.Interface
 {
@@ -9,5 +10,6 @@ namespace Services.Interface
         public void DeleteRoomInformationById(int id);
         public void UpdateRoomInformation(RoomInformation roomInformation);
         public RoomInformation GetRoomInformationById(int id);
+        public List<RoomInformationDTO> GetRoomInformationDTO();
     }
 }

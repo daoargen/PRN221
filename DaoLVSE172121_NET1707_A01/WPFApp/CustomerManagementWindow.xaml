@@ -5,28 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="CustomerManagementWindow" Height="450" Width="800">
+        Title="Customer Management"
+        Height="448"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        SizeToContent="Manual"
+        WindowStyle="SingleBorderWindow">
     <Grid>
-        <DataGrid x:Name="dtgCustomer" HorizontalAlignment="Left" Height="301" Margin="361,81,0,0" VerticalAlignment="Top" Width="412" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Label x:Name="lbHeader" Content="Customer Management" HorizontalAlignment="Left" Height="49" Margin="10,23,0,0" VerticalAlignment="Top" Width="346" FontSize="30" FontWeight="Bold"/>
-        <Label x:Name="lbId" Content="Id" HorizontalAlignment="Left" Height="27" Margin="10,94,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox x:Name="txtId" TextWrapping="Wrap" Margin="95,94,470,313"/>
-        <Label x:Name="lbFullname" Content="Full name" HorizontalAlignment="Left" Height="27" Margin="10,126,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox x:Name="txtFullName" TextWrapping="Wrap" Margin="95,126,470,281"/>
-        <Label x:Name="lbTelephone" Content="Telephone" HorizontalAlignment="Left" Height="27" Margin="10,158,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox x:Name="txtTelephone" TextWrapping="Wrap" Margin="95,158,470,249"/>
-        <Label x:Name="txtEmail" Content="Email" HorizontalAlignment="Left" Height="27" Margin="10,190,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox x:Name="txtEmail1" TextWrapping="Wrap" Margin="95,190,470,217"/>
-        <Label x:Name="lbDob" Content="Dob" HorizontalAlignment="Left" Height="27" Margin="10,222,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox x:Name="txtDob" TextWrapping="Wrap" Margin="95,222,579,185"/>
-        <Label x:Name="lbStatus" Content="Status" HorizontalAlignment="Left" Height="27" Margin="10,254,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox x:Name="txtId_Copy4" TextWrapping="Wrap" Margin="95,254,470,153"/>
-        <DatePicker HorizontalAlignment="Left" Margin="226,224,0,0" VerticalAlignment="Top" Height="25" Width="104"/>
-        <TextBox x:Name="txtSearch" TextWrapping="Wrap" Margin="426,34,27,373"/>
-        <Label x:Name="lbSearch" Content="Search" HorizontalAlignment="Left" Height="27" Margin="361,34,0,0" VerticalAlignment="Top" Width="60"/>
-        <Button x:Name="btAdd" Content="ADD" HorizontalAlignment="Left" Margin="20,352,0,0" VerticalAlignment="Top" Width="60" Height="30"/>
-        <Button x:Name="btUpdate" Content="UPDATE" HorizontalAlignment="Left" Margin="95,352,0,0" VerticalAlignment="Top" Width="60" Height="30"/>
-        <Button x:Name="btRemove" Content="REMOVE" HorizontalAlignment="Left" Margin="172,352,0,0" VerticalAlignment="Top" Width="60" Height="30"/>
-        <Button x:Name="btExit" Content="EXIT" HorizontalAlignment="Left" Margin="248,352,0,0" VerticalAlignment="Top" Width="60" Height="30"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lbHeader" Content="Customer Management" Grid.Column="0" Grid.ColumnSpan="2"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               FontSize="30" FontWeight="Bold" Margin="10,20,0,10"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10,0,10,0">
+            <Label x:Name="lbId" Content="Id" />
+            <TextBox x:Name="txtId" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbFullname" Content="Full name" />
+            <TextBox x:Name="txtFullName" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbTelephone" Content="Telephone" />
+            <TextBox x:Name="txtTelephone" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="txtEmail" Content="Email" />
+            <TextBox x:Name="txtEmail1" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbDob" Content="Dob" />
+            <TextBox x:Name="txtDob" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbStatus" Content="Status" />
+            <TextBox x:Name="txtStatus" TextWrapping="Wrap" IsEnabled="False"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10,0,10,0">
+            <Label x:Name="lbSearch" Content="Search" HorizontalAlignment="Left" Width="60"/>
+            <TextBox x:Name="txtSearch" TextWrapping="Wrap" Width="300" HorizontalAlignment="Left" TextChanged="txtSearch_TextChanged"/>
+            <DataGrid x:Name="dtgCustomer" HorizontalAlignment="Left" 
+                      Width="512" Height="228" Margin="0,10,0,0" 
+                      AutoGenerateColumns="True" SelectionChanged="dtgCustomer_SelectionChanged"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="243,10,0,10">
+            <Button x:Name="btAdd" Content="ADD" Width="60" Height="30" Margin="5" Click="btAdd_Click"/>
+            <Button x:Name="btUpdate" Content="UPDATE" Width="60" Height="30" Margin="5" Click="btUpdate_Click"/>
+            <Button x:Name="btRemove" Content="REMOVE" Width="60" Height="30" Margin="5" Click="btRemove_Click"/>
+            <Button x:Name="btExit" Content="EXIT" Width="60" Height="30" Margin="5" Click="btExit_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="AdminNarWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btnCustomerInfomationManagement" Content="Customer Information" Margin="200,198,466,197"/>
-        <Button x:Name="btnCustomerInfomationManagement_Copy" Content="Customer Information" Margin="472,198,194,197"/>
-        <Label x:Name="lbManagementOption" Content="MANAGEMENT OPTIONS" HorizontalAlignment="Center" Height="64" Margin="0,62,0,0" VerticalAlignment="Top" Width="428" FontSize="36"/>
+        Title="AdminNarWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-41">
+        <Button x:Name="btnCustomerInfomationManagement" Content="Customer Information" Margin="0,0,0,239" Click="btnCustomerInfomationManagement_Click" HorizontalAlignment="Center" Width="420" Height="39" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnRoomInformationInfomationManagement" Content="RoomInformation Information" Margin="0,0,0,178" HorizontalAlignment="Center" Width="420" Height="39" VerticalAlignment="Bottom" Click="btnRoomInformationInfomationManagement_Click"/>
+        <Label x:Name="lbManagementOption" Content="MANAGEMENT OPTIONS" HorizontalAlignment="Center" Height="64" Margin="0,0,0,308" VerticalAlignment="Bottom" Width="420" FontSize="36"/>
     </Grid>
 </Window>

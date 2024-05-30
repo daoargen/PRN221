@@ -1,4 +1,5 @@
 ﻿using BusinessObject;
+using BusinessObject.DTO;
 using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
@@ -36,6 +37,24 @@ namespace Services.Implement
         public void UpdateRoomInformation(RoomInformation roomInformation)
         {
             _repo.UpdateRoomInformation(roomInformation);
+        }
+        public List<RoomInformationDTO> GetRoomInformationDTO()
+        {
+            List<RoomInformationDTO> roomInformationDTOs = new List<RoomInformationDTO>();
+            List<RoomInformation> roomInformations = _repo.GetRoomInformation();
+            foreach (RoomInformation roomInformation in roomInformations)
+            {
+                RoomInformationDTO roomInformationDTO = new RoomInformationDTO();
+                roomInformationDTO.RoomId = roomInformation.RoomId;
+                roomInformationDTO.RoomNumber = roomInformation.RoomNumber;
+                roomInformationDTO.RoomDetailDescription = roomInformation.RoomDetailDescription;
+                roomInformationDTO.RoomMaxCapacity = roomInformation.RoomMaxCapacity;
+                roomInformationDTO.RoomTypeId = roomInformation.RoomTypeId;
+                roomInformationDTO.RoomStatus = roomInformation.RoomStatus;
+                roomInformationDTO.RoomPricePerDay = roomInformation.RoomPricePerDay;
+                roomInformationDTOs.Add(roomInformationDTO);
+            }
+            return roomInformationDTOs;
         }
     }
 }

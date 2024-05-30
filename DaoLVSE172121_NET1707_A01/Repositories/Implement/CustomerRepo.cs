@@ -7,46 +7,71 @@ namespace Repositories.Implement
     {
         public void AddCustomer(Customer customer)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                _content.Customers.Add(customer);
-                _content.SaveChanges();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    _content.Customers.Add(customer);
+                    _content.SaveChanges();
+                }
             }
+            catch (Exception ex) { }
+
+
         }
 
         public void DeleteCustomerById(int id)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-
-                _content.Customers.Remove(_content.Customers.FirstOrDefault(x => x.CustomerId == id));
-                _content.SaveChanges();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    _content.Customers.Remove(_content.Customers.FirstOrDefault(x => x.CustomerId == id));
+                    _content.SaveChanges();
+                }
             }
+            catch (Exception ex) { }
+
         }
 
         public Customer GetCustomerById(int id)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                return _content.Customers.FirstOrDefault(x => x.CustomerId == id);
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    return _content.Customers.FirstOrDefault(x => x.CustomerId == id);
+                }
             }
+            catch (Exception ex) { return null; }
+
         }
 
         public List<Customer> GetCustomers()
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                return _content.Customers.ToList();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    return _content.Customers.ToList();
+                }
             }
+            catch (Exception ex) { return null; }
+
         }
 
         public void UpdateCustomer(Customer customer)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                _content.Customers.Update(customer);
-                _content.SaveChanges();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    _content.Customers.Update(customer);
+                    _content.SaveChanges();
+                }
             }
+            catch (Exception ex) { }
+
         }
     }
 }

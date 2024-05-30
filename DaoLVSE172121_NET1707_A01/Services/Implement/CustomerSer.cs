@@ -1,4 +1,5 @@
 ﻿using BusinessObject;
+using BusinessObject.DTO;
 using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
@@ -61,6 +62,24 @@ namespace Services.Implement
                     return false;
                 }
             }
+        }
+
+        public List<CustomerDTO> GetCustomerDTO()
+        {
+            var customerList = GetCustomers();
+            List<CustomerDTO> result = new List<CustomerDTO>();
+            foreach (var item in customerList)
+            {
+                CustomerDTO customer = new CustomerDTO();
+                customer.CustomerId = item.CustomerId;
+                customer.CustomerFullName = item.CustomerFullName;
+                customer.Telephone = item.Telephone;
+                customer.CustomerBirthday = item.CustomerBirthday;
+                customer.EmailAddress = item.EmailAddress;
+                customer.CustomerStatus = item.CustomerStatus;
+                result.Add(customer);
+            }
+            return result;
         }
     }
 }

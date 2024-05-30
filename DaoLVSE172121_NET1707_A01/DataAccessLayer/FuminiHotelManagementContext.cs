@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
+
 namespace BusinessObject;
 
 public partial class FuminiHotelManagementContext : DbContext

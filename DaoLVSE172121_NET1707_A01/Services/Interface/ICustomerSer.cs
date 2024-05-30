@@ -1,4 +1,5 @@
 ﻿using BusinessObject;
+using BusinessObject.DTO;
 
 namespace Services.Interface
 {
@@ -11,5 +12,6 @@ namespace Services.Interface
         public Customer GetCustomerById(int id);
         public bool ValidCustomer(string mail, string password);
         public Customer GetCustomerByMail(string mail);
+        public List<CustomerDTO> GetCustomerDTO();
     }
 }

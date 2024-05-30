@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp.RoomInformationManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="RoomInformationManagementWindow" Height="539" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lbHeader" Content="Room Information Management" Grid.Column="0" Grid.ColumnSpan="2"
+       HorizontalAlignment="Left" VerticalAlignment="Top"
+       FontSize="30" FontWeight="Bold" Margin="10,20,0,10"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10,0,10,0">
+            <Label x:Name="lbId" Content="Id" />
+            <TextBox x:Name="txtId" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbRoomNumber" Content="Room Number" />
+            <TextBox x:Name="txtRoomNumber" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbRoomDetailDescription" Content="Room Detail Description" />
+            <TextBox x:Name="txtRoomDetailDescription" TextWrapping="Wrap" IsEnabled="False" />
+            <Label x:Name="txtEmail" Content="Email" />
+            <TextBox x:Name="txtEmail1" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbDob" Content="Dob" />
+            <TextBox x:Name="txtDob" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbStatus" Content="Status" />
+            <TextBox x:Name="txtStatus" TextWrapping="Wrap" IsEnabled="False"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10,0,10,0">
+            <Label x:Name="lbSearch" Content="Search" HorizontalAlignment="Left" Width="60"/>
+            <TextBox x:Name="txtSearch" TextWrapping="Wrap" Width="300" HorizontalAlignment="Left"/>
+            <DataGrid x:Name="dtgRoomInformation" HorizontalAlignment="Left" 
+              Width="512" Height="228" Margin="0,10,0,0" 
+              AutoGenerateColumns="True" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="243,10,0,10">
+            <Button x:Name="btAdd" Content="ADD" Width="60" Height="30" Margin="5" />
+            <Button x:Name="btUpdate" Content="UPDATE" Width="60" Height="30" Margin="5" />
+            <Button x:Name="btRemove" Content="REMOVE" Width="60" Height="30" Margin="5" />
+            <Button x:Name="btExit" Content="EXIT" Width="60" Height="30" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>
