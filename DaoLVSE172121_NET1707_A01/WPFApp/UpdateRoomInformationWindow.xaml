@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp.UpdateRoomInformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="UpdateRoomInformationWindow" Height="473" Width="390"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lbHeader" Content="Update Room Information" Grid.Column="0" Grid.ColumnSpan="2"
+HorizontalAlignment="Left" VerticalAlignment="Top"
+FontSize="30" FontWeight="Bold" Margin="10,20,0,10"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10,0,10,0">
+            <Label x:Name="lbRoomNumber" Content="Room Number" />
+            <TextBox x:Name="txtRoomNumber" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbRoomDetailDescription" Content="Room Detail Description" />
+            <TextBox x:Name="txtRoomDetailDescription" TextWrapping="Wrap" IsEnabled="True" />
+            <Label x:Name="lbRoomMaxCapacity" Content="Room Max Capacity" />
+            <TextBox x:Name="txtRoomMaxCapacity" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbRoomTypeId" Content="Room Type Id" />
+            <TextBox x:Name="txtRoomTypeId" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbStatus" Content="Status" />
+            <TextBox x:Name="txtStatus" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbRoomPricePerDay" Content="Room Price Per Day" />
+            <TextBox x:Name="txtRoomPricePerDay" TextWrapping="Wrap" IsEnabled="True" Height="16"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="106,10,0,10">
+            <Button x:Name="btUpdate" Content="UPDATE" Width="60" Height="30" Margin="5" Click="btUpdate_Click" />
+            <Button x:Name="btExit" Content="EXIT" Width="60" Height="30" Margin="5" Click="btExit_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

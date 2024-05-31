@@ -13,5 +13,29 @@ namespace WpfApp
         {
             InitializeComponent();
         }
+
+        private void btnCustomerInfomationManagement_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+
+            EditProfileWindow editProfileWindow = new EditProfileWindow()
+            {
+                currentCustomer = customer
+            };
+            editProfileWindow.Closed += (s, args) => Show();
+            editProfileWindow.Show();
+        }
+
+        private void btnEditProfile_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+
+            WiewBookingHistoryWindow wiewBookingHistoryWindow = new WiewBookingHistoryWindow()
+            {
+                currentCustomer = customer
+            };
+            wiewBookingHistoryWindow.Closed += (s, args) => Show();
+            wiewBookingHistoryWindow.Show();
+        }
     }
 }

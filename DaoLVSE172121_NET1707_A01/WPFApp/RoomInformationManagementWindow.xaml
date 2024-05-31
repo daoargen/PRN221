@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="RoomInformationManagementWindow" Height="539" Width="800"
+        Title="RoomInformationManagementWindow" Height="479" Width="800"
         ResizeMode="NoResize">
-    <Grid>
+    <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="2*" />
@@ -29,27 +29,29 @@
             <TextBox x:Name="txtRoomNumber" TextWrapping="Wrap" IsEnabled="False"/>
             <Label x:Name="lbRoomDetailDescription" Content="Room Detail Description" />
             <TextBox x:Name="txtRoomDetailDescription" TextWrapping="Wrap" IsEnabled="False" />
-            <Label x:Name="txtEmail" Content="Email" />
-            <TextBox x:Name="txtEmail1" TextWrapping="Wrap" IsEnabled="False"/>
-            <Label x:Name="lbDob" Content="Dob" />
-            <TextBox x:Name="txtDob" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbRoomMaxCapacity" Content="Room Max Capacity" />
+            <TextBox x:Name="txtRoomMaxCapacity" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbRoomTypeId" Content="Room Type Id" />
+            <TextBox x:Name="txtRoomTypeId" TextWrapping="Wrap" IsEnabled="False"/>
             <Label x:Name="lbStatus" Content="Status" />
             <TextBox x:Name="txtStatus" TextWrapping="Wrap" IsEnabled="False"/>
+            <Label x:Name="lbRoomPricePerDay" Content="Room Price Per Day" />
+            <TextBox x:Name="txtRoomPricePerDay" TextWrapping="Wrap" IsEnabled="False"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="10,0,10,0">
             <Label x:Name="lbSearch" Content="Search" HorizontalAlignment="Left" Width="60"/>
-            <TextBox x:Name="txtSearch" TextWrapping="Wrap" Width="300" HorizontalAlignment="Left"/>
+            <TextBox x:Name="txtSearch" TextWrapping="Wrap" Width="300" HorizontalAlignment="Left" TextChanged="txtSearch_TextChanged"/>
             <DataGrid x:Name="dtgRoomInformation" HorizontalAlignment="Left" 
               Width="512" Height="228" Margin="0,10,0,0" 
-              AutoGenerateColumns="True" />
+              AutoGenerateColumns="True" SelectionChanged="dtgRoomInformation_SelectionChanged" />
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="243,10,0,10">
-            <Button x:Name="btAdd" Content="ADD" Width="60" Height="30" Margin="5" />
-            <Button x:Name="btUpdate" Content="UPDATE" Width="60" Height="30" Margin="5" />
-            <Button x:Name="btRemove" Content="REMOVE" Width="60" Height="30" Margin="5" />
-            <Button x:Name="btExit" Content="EXIT" Width="60" Height="30" Margin="5" />
+            <Button x:Name="btAdd" Content="ADD" Width="60" Height="30" Margin="5" Click="btAdd_Click" />
+            <Button x:Name="btUpdate" Content="UPDATE" Width="60" Height="30" Margin="5" Click="btUpdate_Click" />
+            <Button x:Name="btRemove" Content="REMOVE" Width="60" Height="30" Margin="5" Click="btRemove_Click" />
+            <Button x:Name="btExit" Content="EXIT" Width="60" Height="30" Margin="5" Click="btExit_Click" />
         </StackPanel>
     </Grid>
 </Window>

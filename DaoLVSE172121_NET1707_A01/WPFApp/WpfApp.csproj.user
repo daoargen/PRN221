@@ -5,10 +5,22 @@
     <Compile Update="AddCustomerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddRoomInformationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditProfileWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="RoomInformationManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UpdateCustomerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateRoomInformationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WiewBookingHistoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -16,10 +28,22 @@
     <Page Update="AddCustomerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="AddRoomInformationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditProfileWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="RoomInformationManagementWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UpdateCustomerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateRoomInformationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WiewBookingHistoryWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

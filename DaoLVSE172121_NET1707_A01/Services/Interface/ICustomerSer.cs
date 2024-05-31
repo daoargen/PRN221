@@ -13,5 +13,6 @@ namespace Services.Interface
         public bool ValidCustomer(string mail, string password);
         public Customer GetCustomerByMail(string mail);
         public List<CustomerDTO> GetCustomerDTO();
+        public List<BookingHistory> GetBookingHistories(int id);
     }
 }

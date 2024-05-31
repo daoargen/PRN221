@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\fpt\C#\PRN221\DaoLVSE172121_NET1707_A01\WpfApp\obj\Debug\net8.0-windows\
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WpfApp\obj\Debug\net8.0-windows\
 WpfApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-F:\fpt\C#\PRN221\DaoLVSE172121_NET1707_A01\WpfApp\App.xaml
-7-1055998470
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\WpfApp\App.xaml
+11356193498
 
-10-1086067709
-248-2008621232
-AddCustomerWindow.xaml;AdminNarWindow.xaml;CustomerManagementWindow.xaml;MainWindow.xaml;RoomInformationManagementWindow.xaml;UpdateCustomerWindow.xaml;UserNarWindow.xaml;
+14-864548189
+2482094240528
+AddCustomerWindow.xaml;AddRoomInformationWindow.xaml;AdminNarWindow.xaml;CustomerManagementWindow.xaml;EditProfileWindow.xaml;MainWindow.xaml;RoomInformationManagementWindow.xaml;UpdateCustomerWindow.xaml;UpdateRoomInformationWindow.xaml;UserNarWindow.xaml;WiewBookingHistoryWindow.xaml;
 
 False
 

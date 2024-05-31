@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp.WiewBookingHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="WiewBookingHistoryWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="lbHeader" Content="Your Booking History" Grid.Column="0"
+        HorizontalAlignment="Left" VerticalAlignment="Top"
+        FontSize="30" FontWeight="Bold" Margin="224,24,0,0"/>
+        <DataGrid x:Name="dtgHistory" HorizontalAlignment="Center" 
+           Width="800" Margin="0,103,0,0" 
+           AutoGenerateColumns="True"/>
+    </Grid>
+</Window>

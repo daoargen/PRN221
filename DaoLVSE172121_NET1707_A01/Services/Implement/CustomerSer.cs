@@ -8,45 +8,51 @@ namespace Services.Implement
 {
     public class CustomerSer : ICustomerSer
     {
-        private ICustomerRepo _repo;
+        private ICustomerRepo _cusRepo;
+        private IBookingReservationRepo _bookResRepo;
+        private IBookingDetailRepo _bookDetRepo;
+        private IRoomInformationRepo _roomInfoRepo;
         public CustomerSer()
         {
-            _repo = new CustomerRepo();
+            _cusRepo = new CustomerRepo();
+            _bookResRepo = new BookingReservationRepo();
+            _bookDetRepo = new BookingDetailRepo();
+            _roomInfoRepo = new RoomInformationRepo();
         }
 
         public void AddCustomer(Customer customer)
         {
-            _repo.AddCustomer(customer);
+            _cusRepo.AddCustomer(customer);
         }
 
         public void DeleteCustomerById(int id)
         {
-            _repo.DeleteCustomerById(id);
+            _cusRepo.DeleteCustomerById(id);
         }
 
         public Customer GetCustomerById(int id)
         {
-            return _repo.GetCustomerById(id);
+            return _cusRepo.GetCustomerById(id);
         }
 
         public Customer GetCustomerByMail(string mail)
         {
-            return _repo.GetCustomers().FirstOrDefault(x => x.EmailAddress == mail);
+            return _cusRepo.GetCustomers().FirstOrDefault(x => x.EmailAddress == mail);
         }
 
         public List<Customer> GetCustomers()
         {
-            return _repo.GetCustomers();
+            return _cusRepo.GetCustomers();
         }
 
         public void UpdateCustomer(Customer customer)
         {
-            _repo.UpdateCustomer(customer);
+            _cusRepo.UpdateCustomer(customer);
         }
 
         public bool ValidCustomer(string mail, string password)
         {
-            Customer currentCustomer = _repo.GetCustomers().FirstOrDefault(x => x.EmailAddress == mail);
+            Customer currentCustomer = _cusRepo.GetCustomers().FirstOrDefault(x => x.EmailAddress == mail);
             if (currentCustomer == null)
             {
                 return false;
@@ -80,6 +86,29 @@ namespace Services.Implement
                 result.Add(customer);
             }
             return result;
+        }
+
+        public List<BookingHistory> GetBookingHistories(int id)
+        {
+            List<BookingHistory> bookingHistories = new List<BookingHistory>();
+            var bookingReservation = _bookResRepo.GetBookingReservations().Where(x => x.CustomerId == id).ToList();
+            foreach (var currentBookingReservation in bookingReservation)
+            {
+                var bookingDetail = _bookDetRepo.GetBookingDetail().Where(x => x.BookingReservationId == currentBookingReservation.BookingReservationId).ToList();
+                foreach (var currentBookingDetail in bookingDetail)
+                {
+                    BookingHistory currentBookingHistory = new BookingHistory();
+                    currentBookingHistory.StartDate = currentBookingDetail.StartDate;
+                    currentBookingHistory.EndDate = currentBookingDetail.EndDate;
+                    currentBookingHistory.ActualPrice = currentBookingDetail.ActualPrice;
+                    var currentRoomInformation = _roomInfoRepo.GetRoomInformation().FirstOrDefault(x => x.RoomId == currentBookingDetail.RoomId);
+                    currentBookingHistory.RoomNumber = currentRoomInformation.RoomNumber;
+                    currentBookingHistory.RoomDetailDescription = currentRoomInformation.RoomDetailDescription;
+                    currentBookingHistory.RoomMaxCapacity = currentRoomInformation.RoomMaxCapacity;
+                    bookingHistories.Add(currentBookingHistory);
+                }
+            }
+            return bookingHistories;
         }
     }
 }

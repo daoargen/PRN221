@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="UserNarWindow" Height="450" Width="800">
+        Title="UserNarWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
     <Grid>
-        
+        <Button x:Name="btnCustomerInfomationManagement" Content="Edit Profile" Margin="0,0,0,239" HorizontalAlignment="Center" Width="420" Height="39" VerticalAlignment="Bottom" Click="btnCustomerInfomationManagement_Click"/>
+        <Button x:Name="btnEditProfile" Content="View booking history" Margin="0,0,0,178" HorizontalAlignment="Center" Width="420" Height="39" VerticalAlignment="Bottom" Click="btnEditProfile_Click" />
+        <Label x:Name="lbManagementOption" Content="        USER OPTIONS" HorizontalAlignment="Center" Height="64" Margin="0,0,0,308" VerticalAlignment="Bottom" Width="420" FontSize="36"/>
+        <Button x:Name="btnBooking" Content="Booking" Margin="0,0,0,117" HorizontalAlignment="Center" Width="420" Height="39" VerticalAlignment="Bottom" />
     </Grid>
 </Window>

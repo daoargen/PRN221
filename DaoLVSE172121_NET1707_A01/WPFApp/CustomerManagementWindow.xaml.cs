@@ -84,7 +84,11 @@ namespace WpfApp
 
         private void txtSearch_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-
+            var searchText = txtSearch.Text;
+            dtgCustomer.ItemsSource = customerDTOs
+                .Where(x => (x.EmailAddress.Contains(searchText)) ||
+                (x.CustomerFullName.Contains(searchText)) ||
+                (x.Telephone.Contains(searchText)));
         }
     }
 }

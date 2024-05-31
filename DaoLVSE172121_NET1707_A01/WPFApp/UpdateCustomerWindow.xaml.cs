@@ -50,6 +50,7 @@ namespace WpfApp
             customer.EmailAddress = txtEmail.Text;
             customer.CustomerStatus = 1;
             _cus.UpdateCustomer(customer);
+            Close();
         }
 
         private void btExit_Click(object sender, RoutedEventArgs e)

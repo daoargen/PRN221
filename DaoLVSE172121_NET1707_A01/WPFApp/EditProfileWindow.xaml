@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp.EditProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="EditProfileWindow" Height="376" Width="549"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lbHeader" Content="Customer Management"
+       HorizontalAlignment="Center" VerticalAlignment="Top"
+       FontSize="30" FontWeight="Bold" Margin="0,20,0,0"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10,0,10,0">
+            <Label x:Name="lbFullname" Content="Full name" />
+            <TextBox x:Name="txtFullName" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbTelephone" Content="Telephone" />
+            <TextBox x:Name="txtTelephone" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbEmail" Content="Email" />
+            <TextBox x:Name="txtEmail" TextWrapping="Wrap" IsEnabled="True"/>
+            <Label x:Name="lbDob" Content="Dob" />
+            <TextBox x:Name="txtDob" TextWrapping="Wrap" IsEnabled="True"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+            <Button x:Name="btSave" Content="SAVE" Width="60" Height="30" Margin="5" Click="btSave_Click"/>
+            <Button x:Name="btExit" Content="EXIT" Width="60" Height="30" Margin="5" Click="btExit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
