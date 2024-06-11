@@ -7,45 +7,71 @@ namespace Repositories.Implement
     {
         public void AddRoomInformation(RoomInformation roomInformation)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                _content.RoomInformations.Add(roomInformation);
-                _content.SaveChanges();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    _content.RoomInformations.Add(roomInformation);
+                    _content.SaveChanges();
+                }
             }
+            catch (Exception ex) { }
         }
 
         public void DeleteRoomInformationById(int id)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                _content.RoomInformations.Remove(_content.RoomInformations.FirstOrDefault(x => x.RoomId == id));
-                _content.SaveChanges();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    _content.RoomInformations.Remove(_content.RoomInformations.FirstOrDefault(x => x.RoomId == id));
+                    _content.SaveChanges();
+                }
             }
+            catch (Exception ex) { }
         }
 
         public List<RoomInformation> GetRoomInformation()
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                return _content.RoomInformations.ToList();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    return _content.RoomInformations.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
 
         public RoomInformation GetRoomInformationById(int id)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                return _content.RoomInformations.FirstOrDefault(x => x.RoomId == id);
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    return _content.RoomInformations.FirstOrDefault(x => x.RoomId == id);
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
 
         public void UpdateRoomInformation(RoomInformation roomInformation)
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                _content.RoomInformations.Update(roomInformation);
-                _content.SaveChanges();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    _content.RoomInformations.Update(roomInformation);
+                    _content.SaveChanges();
+                }
             }
+            catch (Exception ex) { }
         }
     }
 }

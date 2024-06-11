@@ -109,8 +109,7 @@
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\UserNarWindow.xaml",
               "RelativeToolTip": "WpfApp\\UserNarWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T04:16:28.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:16:28.712Z"
             },
             {
               "$type": "Document",
@@ -121,8 +120,7 @@
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\UpdateCustomerWindow.xaml",
               "RelativeToolTip": "WpfApp\\UpdateCustomerWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T04:15:00.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:15:00.376Z"
             },
             {
               "$type": "Document",
@@ -133,8 +131,7 @@
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\RoomInformationManagementWindow.xaml",
               "RelativeToolTip": "WpfApp\\RoomInformationManagementWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T04:14:58.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:14:58.564Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\WiewBookingHistoryWindow.xaml",
               "RelativeToolTip": "WpfApp\\WiewBookingHistoryWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T04:14:26.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:14:26.849Z"
             },
             {
               "$type": "Document",
@@ -157,8 +153,7 @@
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\MainWindow.xaml",
               "RelativeToolTip": "WpfApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T04:14:49.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:14:49.703Z"
             },
             {
               "$type": "Document",
@@ -168,7 +163,7 @@
               "RelativeDocumentMoniker": "Services\\Interface\\ICustomerSer.cs",
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Interface\\ICustomerSer.cs",
               "RelativeToolTip": "Services\\Interface\\ICustomerSer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:55:06.431Z",
               "EditorCaption": ""
@@ -183,8 +178,7 @@
               "RelativeToolTip": "WpfApp\\UserNarWindow.xaml.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAA8wBQAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:16:31.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:16:31.514Z"
             },
             {
               "$type": "Document",
@@ -196,8 +190,7 @@
               "RelativeToolTip": "WpfApp\\WiewBookingHistoryWindow.xaml.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T04:14:32.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:14:32.625Z"
             },
             {
               "$type": "Document",
@@ -208,8 +201,7 @@
               "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\WpfApp\\CustomerManagementWindow.xaml",
               "RelativeToolTip": "WpfApp\\CustomerManagementWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T04:14:52.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T04:14:52.89Z"
             },
             {
               "$type": "Document",
@@ -221,8 +213,7 @@
               "RelativeToolTip": "Services\\Implement\\CustomerSer.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAYwG8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:55:40.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T03:55:40.724Z"
             },
             {
               "$type": "Document",
@@ -234,8 +225,7 @@
               "RelativeToolTip": "BusinessObject\\RoomType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:54:37.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T03:54:37.269Z"
             },
             {
               "$type": "Document",
@@ -247,8 +237,7 @@
               "RelativeToolTip": "BusinessObject\\RoomInformation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:54:17.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T03:54:17.817Z"
             },
             {
               "$type": "Document",
@@ -260,8 +249,7 @@
               "RelativeToolTip": "BusinessObject\\DTO\\RoomInformationDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:53:12.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T03:53:12.891Z"
             },
             {
               "$type": "Document",
@@ -273,8 +261,7 @@
               "RelativeToolTip": "BusinessObject\\BookingDetail.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:52:19.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T03:52:19.528Z"
             }
           ]
         },

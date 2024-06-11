@@ -7,9 +7,16 @@ namespace Repositories.Implement
     {
         public List<BookingDetail> GetBookingDetail()
         {
-            using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+            try
             {
-                return _content.BookingDetails.ToList();
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    return _content.BookingDetails.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
     }
