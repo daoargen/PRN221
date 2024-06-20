@@ -9,39 +9,39 @@ namespace Services.Implement
     public class RoomInformationSer : IRoomInformationSer
     {
         private IRoomInformationRepo _repo;
-        public RoomInformationSer()
+        public RoomInformationSer(IRoomInformationRepo roomInformationRepo)
         {
-            _repo = new RoomInformationRepo();
+            _repo = roomInformationRepo;
         }
 
-        public void AddRoomInformation(RoomInformation roomInformation)
+        public async Task AddRoomInformation(RoomInformation roomInformation)
         {
-            _repo.AddRoomInformation(roomInformation);
+            await _repo.AddRoomInformation(roomInformation);
         }
 
-        public void DeleteRoomInformationById(int id)
+        public async Task DeleteRoomInformationById(int id)
         {
-            _repo.DeleteRoomInformationById(id);
+            await _repo.DeleteRoomInformationById(id);
         }
 
-        public List<RoomInformation> GetRoomInformation()
+        public async Task<List<RoomInformation>> GetRoomInformation()
         {
-            return _repo.GetRoomInformation();
+            return await _repo.GetRoomInformation();
         }
 
-        public RoomInformation GetRoomInformationById(int id)
+        public async Task<RoomInformation> GetRoomInformationById(int id)
         {
-            return _repo.GetRoomInformationById(id);
+            return await _repo.GetRoomInformationById(id);
         }
 
-        public void UpdateRoomInformation(RoomInformation roomInformation)
+        public async Task UpdateRoomInformation(RoomInformationModel roomInformation)
         {
-            _repo.UpdateRoomInformation(roomInformation);
+            await _repo.UpdateRoomInformation(roomInformation);
         }
-        public List<RoomInformationModel> GetRoomInformationDTO()
+        public async Task<List<RoomInformationModel>> GetRoomInformationDTO()
         {
             List<RoomInformationModel> roomInformationDTOs = new List<RoomInformationModel>();
-            List<RoomInformation> roomInformations = _repo.GetRoomInformation();
+            List<RoomInformation> roomInformations = await _repo.GetRoomInformation();
             foreach (RoomInformation roomInformation in roomInformations)
             {
                 RoomInformationModel roomInformationDTO = new RoomInformationModel();

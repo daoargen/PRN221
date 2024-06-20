@@ -8,51 +8,41 @@ namespace Services.Implement
 {
     public class CustomerSer : ICustomerSer
     {
-        private ICustomerRepo _cusRepo;
-        private IBookingReservationRepo _bookResRepo;
-        private IBookingDetailRepo _bookDetRepo;
-        private IRoomInformationRepo _roomInfoRepo;
-        public CustomerSer()
+        private ICustomerRepo _repo;
+        public CustomerSer(ICustomerRepo customerRepo)
         {
-            _cusRepo = new CustomerRepo();
-            _bookResRepo = new BookingReservationRepo();
-            _bookDetRepo = new BookingDetailRepo();
-            _roomInfoRepo = new RoomInformationRepo();
+            _repo = customerRepo;
         }
 
-        public void AddCustomer(Customer customer)
+        public async Task AddCustomer(Customer customer)
         {
-            _cusRepo.AddCustomer(customer);
+             await _repo.AddCustomer(customer);
         }
 
-        public void DeleteCustomerById(int id)
+        public async Task DeleteCustomerById(int id)
         {
-            _cusRepo.DeleteCustomerById(id);
+            await _repo.DeleteCustomerById(id);
         }
 
-        public Customer GetCustomerById(int id)
+        public async Task<Customer> GetCustomerById(int id)
         {
-            return _cusRepo.GetCustomerById(id);
+            return await _repo.GetCustomerById(id);
         }
 
-        public Customer GetCustomerByMail(string mail)
+        public async Task<List<Customer>> GetCustomers()
         {
-            return _cusRepo.GetCustomers().FirstOrDefault(x => x.EmailAddress == mail);
+            return await _repo.GetCustomers();
         }
 
-        public List<Customer> GetCustomers()
+        public async Task UpdateCustomer(CustomerModel customer)
         {
-            return _cusRepo.GetCustomers();
+             await _repo.UpdateCustomer(customer);
         }
 
-        public void UpdateCustomer(Customer customer)
+        public async Task<bool> ValidCustomer(string mail, string password)
         {
-            _cusRepo.UpdateCustomer(customer);
-        }
-
-        public bool ValidCustomer(string mail, string password)
-        {
-            Customer currentCustomer = _cusRepo.GetCustomers().FirstOrDefault(x => x.EmailAddress == mail);
+            List<Customer> customers = await _repo.GetCustomers();
+            Customer? currentCustomer = customers.FirstOrDefault(x => x.EmailAddress == mail);
             if (currentCustomer == null)
             {
                 return false;
@@ -70,11 +60,11 @@ namespace Services.Implement
             }
         }
 
-        public List<CustomerModel> GetCustomerDTO()
+        public async Task<List<CustomerModel>> GetCustomerDTO()
         {
-            var customerList = GetCustomers();
+            List<Customer> customers = await _repo.GetCustomers();
             List<CustomerModel> result = new List<CustomerModel>();
-            foreach (var item in customerList)
+            foreach (var item in customers)
             {
                 CustomerModel customer = new CustomerModel();
                 customer.CustomerId = item.CustomerId;
@@ -86,29 +76,6 @@ namespace Services.Implement
                 result.Add(customer);
             }
             return result;
-        }
-
-        public List<BookingHistory> GetBookingHistories(int id)
-        {
-            List<BookingHistory> bookingHistories = new List<BookingHistory>();
-            var bookingReservation = _bookResRepo.GetBookingReservations().Where(x => x.CustomerId == id).ToList();
-            foreach (var currentBookingReservation in bookingReservation)
-            {
-                var bookingDetail = _bookDetRepo.GetBookingDetail().Where(x => x.BookingReservationId == currentBookingReservation.BookingReservationId).ToList();
-                foreach (var currentBookingDetail in bookingDetail)
-                {
-                    BookingHistory currentBookingHistory = new BookingHistory();
-                    currentBookingHistory.StartDate = currentBookingDetail.StartDate;
-                    currentBookingHistory.EndDate = currentBookingDetail.EndDate;
-                    currentBookingHistory.ActualPrice = currentBookingDetail.ActualPrice;
-                    var currentRoomInformation = _roomInfoRepo.GetRoomInformation().FirstOrDefault(x => x.RoomId == currentBookingDetail.RoomId);
-                    currentBookingHistory.RoomNumber = currentRoomInformation.RoomNumber;
-                    currentBookingHistory.RoomDetailDescription = currentRoomInformation.RoomDetailDescription;
-                    currentBookingHistory.RoomMaxCapacity = currentRoomInformation.RoomMaxCapacity;
-                    bookingHistories.Add(currentBookingHistory);
-                }
-            }
-            return bookingHistories;
         }
     }
 }

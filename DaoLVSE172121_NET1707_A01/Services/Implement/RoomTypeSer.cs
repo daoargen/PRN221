@@ -1,4 +1,4 @@
-﻿using BusinessObject;
+﻿ using BusinessObject;
 using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
@@ -8,14 +8,14 @@ namespace Services.Implement
     public class RoomTypeSer : IRoomTypeSer
     {
         private IRoomTypeRepo _repo;
-        public RoomTypeSer()
+        public RoomTypeSer(IRoomTypeRepo roomTypeRepo)
         {
-            _repo = new RoomTypeRepo();
+            _repo = roomTypeRepo;
         }
 
-        public List<RoomType> GetRoomTypes()
+        public async Task<List<RoomType>> GetRoomTypes()
         {
-            return _repo.GetRoomTypes();
+            return await _repo.GetRoomTypes();
         }
     }
 }

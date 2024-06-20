@@ -104,8 +104,11 @@ namespace Repositories.Implement
                         neededUpdateCustomer.Telephone = customer.Telephone;
                         neededUpdateCustomer.EmailAddress = customer.EmailAddress;
                         neededUpdateCustomer.CustomerStatus = customer.CustomerStatus;
-
                         await _content.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        throw new Exception("Customer not found");
                     }
                 }
             }

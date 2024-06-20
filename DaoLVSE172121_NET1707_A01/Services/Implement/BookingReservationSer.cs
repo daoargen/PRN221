@@ -5,17 +5,17 @@ using Services.Interface;
 
 namespace Services.Implement
 {
-    public class BookingReservationSer : IBookingDetailSer
+    public class BookingReservationSer : IBookingReservationSer
     {
         private IBookingReservationRepo _repo;
-        public BookingReservationSer()
+        public BookingReservationSer(IBookingReservationRepo bookingReservationRepo)
         {
-            _repo = new BookingReservationRepo();
+            _repo = bookingReservationRepo;
         }
 
-        public List<BookingDetail> GetBookingDetails()
+        public async Task<List<BookingReservation>> GetBookingReservations()
         {
-            throw new NotImplementedException();
+            return await _repo.GetBookingReservations();
         }
     }
 }

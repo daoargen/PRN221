@@ -1,13 +1,14 @@
 ﻿using BusinessObject;
+using BusinessObject.DTO;
 
 namespace Repositories.Interface
 {
     public interface IRoomInformationRepo
     {
-        public List<RoomInformation> GetRoomInformation();
-        public void AddRoomInformation(RoomInformation roomInformation);
-        public void DeleteRoomInformationById(int id);
-        public void UpdateRoomInformation(RoomInformation roomInformation);
-        public RoomInformation GetRoomInformationById(int id);
+        Task<List<RoomInformation>> GetRoomInformation();
+        Task AddRoomInformation(RoomInformation roomInformation);
+        Task DeleteRoomInformationById(int id);
+        Task UpdateRoomInformation(RoomInformationModel roomInformation);
+        Task<RoomInformation> GetRoomInformationById(int id);
     }
 }

@@ -4,6 +4,6 @@ namespace Services.Interface
 {
     public interface IRoomTypeSer
     {
-        public List<RoomType> GetRoomTypes();
+        Task<List<RoomType>> GetRoomTypes();
     }
 }

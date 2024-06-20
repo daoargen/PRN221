@@ -18,3 +18,9 @@ F:\fpt\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.dl
 F:\fpt\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\refint\Services.dll
 F:\fpt\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.pdb
 F:\fpt\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\ref\Services.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.sourcelink.json

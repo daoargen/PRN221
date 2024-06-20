@@ -4,6 +4,6 @@ namespace Repositories.Interface
 {
     public interface IRoomTypeRepo
     {
-        public List<RoomType> GetRoomTypes();
+        Task<List<RoomType>> GetRoomTypes();
     }
 }

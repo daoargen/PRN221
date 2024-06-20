@@ -7,14 +7,14 @@ namespace Services.Implement
     public class BookingDetailSer : IBookingDetailSer
     {
         private IBookingDetailRepo _repo;
-        public BookingDetailSer(IBookingDetailRepo bookingRepo)
+        public BookingDetailSer(IBookingDetailRepo bookingDetailRepo)
         {
-            _repo = bookingRepo;
+            _repo = bookingDetailRepo;
         }
 
-        public Task<List<BookingDetail>> GetBookingDetails()
+        public async Task<List<BookingDetail>> GetBookingDetails()
         {
-            return _repo.GetBookingDetail();
+            return await _repo.GetBookingDetail();
         }
     }
 }

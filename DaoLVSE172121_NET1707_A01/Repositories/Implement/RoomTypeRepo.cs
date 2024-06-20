@@ -1,15 +1,16 @@
 ﻿using BusinessObject;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Interface;
 
 namespace Repositories.Implement
 {
     public class RoomTypeRepo : IRoomTypeRepo
     {
-        public List<RoomType> GetRoomTypes()
+        public async Task<List<RoomType>> GetRoomTypes()
         {
             using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
             {
-                return _content.RoomTypes.ToList();
+                return await _content.RoomTypes.ToListAsync();
             }
         }
     }

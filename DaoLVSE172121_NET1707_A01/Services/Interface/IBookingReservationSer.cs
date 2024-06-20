@@ -4,6 +4,6 @@ namespace Services.Interface
 {
     public interface IBookingReservationSer
     {
-        public List<BookingReservation> GetBookingReservations();
+        Task<List<BookingReservation>> GetBookingReservations();
     }
 }
