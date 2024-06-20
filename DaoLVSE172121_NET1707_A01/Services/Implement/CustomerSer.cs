@@ -70,13 +70,13 @@ namespace Services.Implement
             }
         }
 
-        public List<CustomerDTO> GetCustomerDTO()
+        public List<CustomerModel> GetCustomerDTO()
         {
             var customerList = GetCustomers();
-            List<CustomerDTO> result = new List<CustomerDTO>();
+            List<CustomerModel> result = new List<CustomerModel>();
             foreach (var item in customerList)
             {
-                CustomerDTO customer = new CustomerDTO();
+                CustomerModel customer = new CustomerModel();
                 customer.CustomerId = item.CustomerId;
                 customer.CustomerFullName = item.CustomerFullName;
                 customer.Telephone = item.Telephone;

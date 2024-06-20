@@ -1,17 +1,18 @@
 ﻿using BusinessObject;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Interface;
 
 namespace Repositories.Implement
 {
     public class BookingDetailRepo : IBookingDetailRepo
     {
-        public List<BookingDetail> GetBookingDetail()
+        public async Task<List<BookingDetail>> GetBookingDetail()
         {
             try
             {
                 using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
                 {
-                    return _content.BookingDetails.ToList();
+                    return await _content.BookingDetails.ToListAsync();
                 }
             }
             catch (Exception ex)

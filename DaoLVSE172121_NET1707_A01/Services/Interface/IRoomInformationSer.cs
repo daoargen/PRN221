@@ -10,6 +10,6 @@ namespace Services.Interface
         public void DeleteRoomInformationById(int id);
         public void UpdateRoomInformation(RoomInformation roomInformation);
         public RoomInformation GetRoomInformationById(int id);
-        public List<RoomInformationDTO> GetRoomInformationDTO();
+        public List<RoomInformationModel> GetRoomInformationDTO();
     }
 }

@@ -1,7 +1,41 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A02\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90748020-9B67-48DF-9114-E898BB2CC6A6}|..\\DaoLVSE172121_NET1707_A01\\Repositories\\Repositories.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\repositories\\implement\\customerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974CF93-0ACD-441B-8E26-C6A40C4E203E}|..\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\services\\implement\\customerser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90748020-9B67-48DF-9114-E898BB2CC6A6}|..\\DaoLVSE172121_NET1707_A01\\Repositories\\Repositories.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\repositories\\interface\\icustomerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ECE5E0B-243B-4316-9162-3E2473F5FB9D}|..\\DaoLVSE172121_NET1707_A01\\BusinessObject\\BusinessObject.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\businessobject\\model\\roominformationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ECE5E0B-243B-4316-9162-3E2473F5FB9D}|..\\DaoLVSE172121_NET1707_A01\\BusinessObject\\BusinessObject.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\businessobject\\model\\bookinghistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90748020-9B67-48DF-9114-E898BB2CC6A6}|..\\DaoLVSE172121_NET1707_A01\\Repositories\\Repositories.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\repositories\\implement\\bookingdetailrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90748020-9B67-48DF-9114-E898BB2CC6A6}|..\\DaoLVSE172121_NET1707_A01\\Repositories\\Repositories.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\repositories\\implement\\bookingreservationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90748020-9B67-48DF-9114-E898BB2CC6A6}|..\\DaoLVSE172121_NET1707_A01\\Repositories\\Repositories.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\repositories\\interface\\ibookingreservationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90748020-9B67-48DF-9114-E898BB2CC6A6}|..\\DaoLVSE172121_NET1707_A01\\Repositories\\Repositories.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\repositories\\interface\\ibookingdetailrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974CF93-0ACD-441B-8E26-C6A40C4E203E}|..\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\services\\implement\\bookingdetailser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974CF93-0ACD-441B-8E26-C6A40C4E203E}|..\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj|d:\\fpt\\material\\ki7\\prn221\\code\\prn221\\daolvse172121_net1707_a01\\services\\interface\\ibookingdetailser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +43,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,6 +76,148 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerSer.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAiwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T07:40:11.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomInformationModel.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\RoomInformationModel.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\RoomInformationModel.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\RoomInformationModel.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\RoomInformationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T07:37:34.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerRepo.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\CustomerRepo.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\CustomerRepo.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\CustomerRepo.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\CustomerRepo.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAIwGcAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:09:00.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingHistory.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\BookingHistory.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\BookingHistory.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\BookingHistory.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\BusinessObject\\Model\\BookingHistory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T07:37:33.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICustomerRepo.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\ICustomerRepo.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\ICustomerRepo.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\ICustomerRepo.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\ICustomerRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:07:35.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingReservationRepo.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingReservationRepo.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingReservationRepo.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingReservationRepo.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingReservationRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:05:17.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBookingReservationRepo.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingReservationRepo.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingReservationRepo.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingReservationRepo.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingReservationRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T05:56:47.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBookingDetailSer.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Interface\\IBookingDetailSer.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Services\\Interface\\IBookingDetailSer.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Interface\\IBookingDetailSer.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Services\\Interface\\IBookingDetailSer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:41:37.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBookingDetailRepo.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingDetailRepo.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingDetailRepo.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingDetailRepo.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Interface\\IBookingDetailRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:27:48.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingDetailSer.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\BookingDetailSer.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\BookingDetailSer.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\BookingDetailSer.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\BookingDetailSer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T09:31:49.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookingDetailRepo.cs",
+              "DocumentMoniker": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingDetailRepo.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingDetailRepo.cs",
+              "ToolTip": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingDetailRepo.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Repositories\\Implement\\BookingDetailRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:28:31.805Z",
+              "EditorCaption": ""
             }
           ]
         },

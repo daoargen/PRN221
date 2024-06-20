@@ -38,13 +38,13 @@ namespace Services.Implement
         {
             _repo.UpdateRoomInformation(roomInformation);
         }
-        public List<RoomInformationDTO> GetRoomInformationDTO()
+        public List<RoomInformationModel> GetRoomInformationDTO()
         {
-            List<RoomInformationDTO> roomInformationDTOs = new List<RoomInformationDTO>();
+            List<RoomInformationModel> roomInformationDTOs = new List<RoomInformationModel>();
             List<RoomInformation> roomInformations = _repo.GetRoomInformation();
             foreach (RoomInformation roomInformation in roomInformations)
             {
-                RoomInformationDTO roomInformationDTO = new RoomInformationDTO();
+                RoomInformationModel roomInformationDTO = new RoomInformationModel();
                 roomInformationDTO.RoomId = roomInformation.RoomId;
                 roomInformationDTO.RoomNumber = roomInformation.RoomNumber;
                 roomInformationDTO.RoomDetailDescription = roomInformation.RoomDetailDescription;

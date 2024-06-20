@@ -4,6 +4,6 @@ namespace Repositories.Interface
 {
     public interface IBookingReservationRepo
     {
-        public List<BookingReservation> GetBookingReservations();
+        Task<List<BookingReservation>> GetBookingReservations();
     }
 }

@@ -4,6 +4,6 @@ namespace Services.Interface
 {
     public interface IBookingDetailSer
     {
-        public List<BookingDetail> GetBookingDetails();
+        Task<List<BookingDetail>> GetBookingDetails();
     }
 }

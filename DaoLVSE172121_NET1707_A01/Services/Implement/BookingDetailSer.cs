@@ -1,5 +1,4 @@
 ﻿using BusinessObject;
-using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
 
@@ -8,12 +7,12 @@ namespace Services.Implement
     public class BookingDetailSer : IBookingDetailSer
     {
         private IBookingDetailRepo _repo;
-        public BookingDetailSer()
+        public BookingDetailSer(IBookingDetailRepo bookingRepo)
         {
-            _repo = new BookingDetailRepo();
+            _repo = bookingRepo;
         }
 
-        public List<BookingDetail> GetBookingDetails()
+        public Task<List<BookingDetail>> GetBookingDetails()
         {
             return _repo.GetBookingDetail();
         }

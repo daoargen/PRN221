@@ -1,6 +1,6 @@
 ﻿namespace BusinessObject.DTO
 {
-    public class RoomInformationDTO
+    public class RoomInformationModel
     {
         public int RoomId { get; set; }
 
