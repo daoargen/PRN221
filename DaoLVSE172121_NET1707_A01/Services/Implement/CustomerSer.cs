@@ -1,5 +1,6 @@
 ﻿using BusinessObject;
 using BusinessObject.DTO;
+using Microsoft.Extensions.Configuration;
 using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
@@ -9,6 +10,26 @@ namespace Services.Implement
     public class CustomerSer : ICustomerSer
     {
         private ICustomerRepo _repo;
+        private string adminEmail;
+        private string adminPassword;
+        private void GetAdminAccount()
+        {
+            var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            IConfigurationSection section = config.GetSection("AdminAccount");
+
+            adminEmail = section["Email"];
+            adminPassword = section["Password"];
+        }
+
+        public bool SignUpWithAdminAccount(string mail)
+        {
+            if (mail == adminEmail)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public CustomerSer(ICustomerRepo customerRepo)
         {
             _repo = customerRepo;
@@ -41,22 +62,42 @@ namespace Services.Implement
 
         public async Task<bool> ValidCustomer(string mail, string password)
         {
-            List<Customer> customers = await _repo.GetCustomers();
-            Customer? currentCustomer = customers.FirstOrDefault(x => x.EmailAddress == mail);
-            if (currentCustomer == null)
+            try
             {
-                return false;
-            }
-            else
-            {
-                if (currentCustomer.Password == password)
+                GetAdminAccount();
+                if (SignUpWithAdminAccount(mail))
                 {
-                    return true;
+                    if (password == adminPassword)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
-                else
+
+                List<Customer> customers = await _repo.GetCustomers();
+                Customer? currentCustomer = customers.FirstOrDefault(x => x.EmailAddress == mail);
+                if (currentCustomer == null)
                 {
                     return false;
                 }
+                else
+                {
+                    if (currentCustomer.Password == password)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("You have no permission to this system!", ex);
             }
         }
 
@@ -76,6 +117,27 @@ namespace Services.Implement
                 result.Add(customer);
             }
             return result;
+        }
+
+        public async Task<Customer> GetCustomerByMail(string mail)
+        {
+            try
+            {
+                List<Customer> customers = await _repo.GetCustomers();
+                Customer? currentCustomer = customers.FirstOrDefault(x => x.EmailAddress == mail);
+                if (currentCustomer != null)
+                {
+                    return currentCustomer;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{ex.Message}", ex);
+            }
         }
     }
 }

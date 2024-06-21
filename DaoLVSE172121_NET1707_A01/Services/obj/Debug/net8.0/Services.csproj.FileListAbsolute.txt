@@ -24,3 +24,17 @@ E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Service
 E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
 E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
 E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.sourcelink.json
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Services.deps.json
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Services.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Services.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\BusinessObject.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\DataAccessLayer.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Repositories.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Repositories.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\BusinessObject.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\DataAccessLayer.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\refint\Services.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\ref\Services.dll

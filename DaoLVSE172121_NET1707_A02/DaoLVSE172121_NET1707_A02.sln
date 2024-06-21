@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "..\DaoLVSE1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObject", "..\DaoLVSE172121_NET1707_A01\BusinessObject\BusinessObject.csproj", "{9ECE5E0B-243B-4316-9162-3E2473F5FB9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelMini", "HotelMini\HotelMini.csproj", "{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelMini", "HotelMini\HotelMini.csproj", "{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

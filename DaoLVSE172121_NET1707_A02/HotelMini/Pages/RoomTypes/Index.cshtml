@@ -1,0 +1,48 @@
+﻿@page
+@model HotelMini.Pages.RoomTypes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].RoomTypeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].TypeDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].TypeNote)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.RoomType) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomTypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeNote)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.RoomTypeId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.RoomTypeId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.RoomTypeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

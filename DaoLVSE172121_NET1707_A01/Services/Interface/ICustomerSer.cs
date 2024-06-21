@@ -12,5 +12,7 @@ namespace Services.Interface
         Task<Customer> GetCustomerById(int id);
         Task<bool> ValidCustomer(string mail, string password);
         Task<List<CustomerModel>> GetCustomerDTO();
+        public bool SignUpWithAdminAccount(string mail);
+        Task<Customer> GetCustomerByMail(string mail);
     }
 }

@@ -1,3 +1,8 @@
+using Repositories.Implement;
+using Repositories.Interface;
+using Services.Implement;
+using Services.Interface;
+
 namespace HotelMini
 {
     public class Program
@@ -8,6 +13,21 @@ namespace HotelMini
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddSession();
+
+            // Add repo to container
+            builder.Services.AddScoped<IBookingDetailRepo, BookingDetailRepo>();
+            builder.Services.AddScoped<IBookingReservationRepo, BookingReservationRepo>();
+            builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
+            builder.Services.AddScoped<IRoomInformationRepo, RoomInformationRepo>();
+            builder.Services.AddScoped<IRoomTypeRepo, RoomTypeRepo>();
+
+            // Add service to container
+            builder.Services.AddScoped<IBookingDetailSer, BookingDetailSer>();
+            builder.Services.AddScoped<IBookingReservationSer, BookingReservationSer>();
+            builder.Services.AddScoped<ICustomerSer, CustomerSer>();
+            builder.Services.AddScoped<IRoomInformationSer, RoomInformationSer>();
+            builder.Services.AddScoped<IRoomTypeSer, RoomTypeSer>();
 
             var app = builder.Build();
 
@@ -21,6 +41,8 @@ namespace HotelMini
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

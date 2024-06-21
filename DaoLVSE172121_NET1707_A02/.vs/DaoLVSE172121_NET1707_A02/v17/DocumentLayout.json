@@ -1,7 +1,31 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|e:\\project\\c#\\prn221\\daolvse172121_net1707_a02\\hotelmini\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|solutionrelative:hotelmini\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|e:\\project\\c#\\prn221\\daolvse172121_net1707_a02\\hotelmini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|solutionrelative:hotelmini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|e:\\project\\c#\\prn221\\daolvse172121_net1707_a02\\hotelmini\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|solutionrelative:hotelmini\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|e:\\project\\c#\\prn221\\daolvse172121_net1707_a02\\hotelmini\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|solutionrelative:hotelmini\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|e:\\project\\c#\\prn221\\daolvse172121_net1707_a02\\hotelmini\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}|HotelMini\\HotelMini.csproj|solutionrelative:hotelmini\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5974CF93-0ACD-441B-8E26-C6A40C4E203E}|..\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj|e:\\project\\c#\\prn221\\daolvse172121_net1707_a01\\services\\implement\\customerser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +33,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "HotelMini\\Pages\\Login.cshtml",
+              "ToolTip": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Login.cshtml",
+              "RelativeToolTip": "HotelMini\\Pages\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T23:58:03.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HotelMini\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HotelMini\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAD0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T23:52:24.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "HotelMini\\Pages\\Error.cshtml",
+              "ToolTip": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Error.cshtml",
+              "RelativeToolTip": "HotelMini\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T23:52:18.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerSer.cs",
+              "DocumentMoniker": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "RelativeDocumentMoniker": "..\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "ToolTip": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "RelativeToolTip": "..\\DaoLVSE172121_NET1707_A01\\Services\\Implement\\CustomerSer.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAkwI4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T23:50:31.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "HotelMini\\Pages\\Login.cshtml.cs",
+              "ToolTip": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "HotelMini\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T23:49:48.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Program.cs",
+              "RelativeDocumentMoniker": "HotelMini\\Program.cs",
+              "ToolTip": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\Program.cs",
+              "RelativeToolTip": "HotelMini\\Program.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T23:49:34.075Z",
+              "EditorCaption": ""
             }
           ]
         }
