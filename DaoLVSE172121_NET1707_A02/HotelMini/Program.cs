@@ -10,6 +10,8 @@ namespace HotelMini
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            // ??ng ký SignalR
+            builder.Services.AddSignalR();
 
             // Add services to the container.
             builder.Services.AddRazorPages();

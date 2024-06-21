@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using BusinessObject;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using BusinessObject;
+using Services.Interface;
 
 namespace HotelMini.Pages.RoomInformations
 {
     public class IndexModel : PageModel
     {
-        private readonly BusinessObject.FuminiHotelManagementContext _context;
+        private readonly IRoomInformationSer _service;
 
-        public IndexModel(BusinessObject.FuminiHotelManagementContext context)
+        public IndexModel(IRoomInformationSer roomInformationSer)
         {
-            _context = context;
+            _service = roomInformationSer;
         }
 
-        public IList<RoomInformation> RoomInformation { get;set; } = default!;
+        public IList<RoomInformation> RoomInformation { get; set; } = default!;
 
         public async Task OnGetAsync()
         {
-            RoomInformation = await _context.RoomInformations
-                .Include(r => r.RoomType).ToListAsync();
+            RoomInformation = await _service.GetRoomInformation();
         }
     }
 }

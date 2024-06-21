@@ -1,7 +1,6 @@
 ﻿using BusinessObject;
 using BusinessObject.DTO;
 using Microsoft.Extensions.Configuration;
-using Repositories.Implement;
 using Repositories.Interface;
 using Services.Interface;
 
@@ -37,7 +36,7 @@ namespace Services.Implement
 
         public async Task AddCustomer(Customer customer)
         {
-             await _repo.AddCustomer(customer);
+            await _repo.AddCustomer(customer);
         }
 
         public async Task DeleteCustomerById(int id)
@@ -57,7 +56,7 @@ namespace Services.Implement
 
         public async Task UpdateCustomer(CustomerModel customer)
         {
-             await _repo.UpdateCustomer(customer);
+            await _repo.UpdateCustomer(customer);
         }
 
         public async Task<bool> ValidCustomer(string mail, string password)

@@ -16,5 +16,15 @@ namespace Services.Implement
         {
             return await _repo.GetBookingDetail();
         }
+
+        public async Task DeleteBookingDetails(BookingDetail bookingDetail)
+        {
+            await _repo.DeleteBookingDetails(bookingDetail);
+        }
+
+        public async Task AddBookingDetails(BookingDetail bookingDetail)
+        {
+            await _repo.AddBookingDetails(bookingDetail);
+        }
     }
 }
