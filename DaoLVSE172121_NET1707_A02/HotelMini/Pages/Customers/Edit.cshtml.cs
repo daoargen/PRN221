@@ -7,16 +7,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BusinessObject;
+using Services.Interface;
 
 namespace HotelMini.Pages.Customers
 {
     public class EditModel : PageModel
     {
-        private readonly BusinessObject.FuminiHotelManagementContext _context;
+        private readonly ICustomerSer _service;
 
-        public EditModel(BusinessObject.FuminiHotelManagementContext context)
+        public EditModel(ICustomerSer customerSer)
         {
-            _context = context;
+            _service = customerSer;
         }
 
         [BindProperty]
@@ -24,18 +25,21 @@ namespace HotelMini.Pages.Customers
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
+            if (HttpContext.Session.GetString("CustomerId") == null)
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var customer =  await _context.Customers.FirstOrDefaultAsync(m => m.CustomerId == id);
-            if (customer == null)
-            {
-                return NotFound();
+                var customer = await _service.Customers.FirstOrDefaultAsync(m => m.CustomerId == id);
+                if (customer == null)
+                {
+                    return NotFound();
+                }
+                Customer = customer;
+                return Page();
             }
-            Customer = customer;
-            return Page();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -47,11 +51,11 @@ namespace HotelMini.Pages.Customers
                 return Page();
             }
 
-            _context.Attach(Customer).State = EntityState.Modified;
+            _service.Attach(Customer).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await _service.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -70,7 +74,7 @@ namespace HotelMini.Pages.Customers
 
         private bool CustomerExists(int id)
         {
-            return _context.Customers.Any(e => e.CustomerId == id);
+            return _service.Customers.Any(e => e.CustomerId == id);
         }
     }
 }

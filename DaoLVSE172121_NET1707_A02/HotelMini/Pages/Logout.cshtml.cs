@@ -5,8 +5,10 @@ namespace HotelMini.Pages
 {
     public class LogoutModel : PageModel
     {
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            HttpContext.Session.Clear();
+            return RedirectToPage("/Index");
         }
     }
 }

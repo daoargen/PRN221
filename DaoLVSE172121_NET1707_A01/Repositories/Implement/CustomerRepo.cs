@@ -91,7 +91,7 @@ namespace Repositories.Implement
             }
         }
 
-        public async Task UpdateCustomer(CustomerModel customer)
+        public async Task UpdateCustomer(Customer customer)
         {
             try
             {
@@ -104,6 +104,7 @@ namespace Repositories.Implement
                         neededUpdateCustomer.Telephone = customer.Telephone;
                         neededUpdateCustomer.EmailAddress = customer.EmailAddress;
                         neededUpdateCustomer.CustomerStatus = customer.CustomerStatus;
+                        customer.Password = customer.Password;
                         await _content.SaveChangesAsync();
                     }
                     else

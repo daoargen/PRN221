@@ -8,7 +8,7 @@ namespace Repositories.Interface
         Task<List<Customer>> GetCustomers();
         Task AddCustomer(Customer customer);
         Task DeleteCustomerById(int id);
-        Task UpdateCustomer(CustomerModel customer);
+        Task UpdateCustomer(Customer customer);
         Task<Customer> GetCustomerById(int id);
     }
 }

@@ -27,7 +27,7 @@ namespace HotelMini.Pages
                 HttpContext.Session.SetString("Email", Email);
                 if (!_ser.SignUpWithAdminAccount(Email))
                 {
-                    HttpContext.Session.SetString("AccountId", customerAccount.CustomerId.ToString());
+                    HttpContext.Session.SetString("CustomerId", customerAccount.CustomerId.ToString());
                 }
 
                 // Redirect to the home page or dashboard

@@ -54,7 +54,7 @@ namespace Services.Implement
             return await _repo.GetCustomers();
         }
 
-        public async Task UpdateCustomer(CustomerModel customer)
+        public async Task UpdateCustomer(Customer customer)
         {
             await _repo.UpdateCustomer(customer);
         }

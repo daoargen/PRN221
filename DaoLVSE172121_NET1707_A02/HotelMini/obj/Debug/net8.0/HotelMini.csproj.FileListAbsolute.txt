@@ -521,3 +521,4 @@ D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\D
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\obj\Debug\net8.0\HotelMini.csproj.AssemblyReference.cache
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\obj\Debug\net8.0\HotelMini.csproj.Up2Date
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
