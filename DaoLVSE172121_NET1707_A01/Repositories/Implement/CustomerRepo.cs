@@ -1,5 +1,4 @@
 ﻿using BusinessObject;
-using BusinessObject.DTO;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Interface;
 
@@ -52,7 +51,7 @@ namespace Repositories.Implement
             }
         }
 
-        public async Task<Customer> GetCustomerById(int id)
+        public async Task<Customer> GetCustomerById(int? id)
         {
             try
             {

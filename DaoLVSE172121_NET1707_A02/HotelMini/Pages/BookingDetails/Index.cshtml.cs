@@ -21,7 +21,15 @@ namespace HotelMini.Pages.BookingDetails
 
         public async Task OnGetAsync()
         {
-            BookingDetail = await _service.GetBookingDetails();
+            if (HttpContext.Session.GetString("CustomerId") == null)
+            {
+                BookingDetail = await _service.GetBookingDetails();
+            }
+            else
+            {
+                var id = HttpContext.Session.GetString("Email");
+                BookingDetail = await _service.GetBookingDetailsByCustomerId(id);
+            }
         }
         public async Task OnPostRemoveExpiredAsync()
         {

@@ -17,7 +17,15 @@ namespace HotelMini.Pages.BookingReservations
 
         public async Task OnGetAsync()
         {
-            BookingReservation = await _service.GetBookingReservations();
+            if (HttpContext.Session.GetString("CustomerId") == null)
+            {
+                BookingReservation = await _service.GetBookingReservations();
+            }
+            else
+            {
+                var id = HttpContext.Session.GetString("Email");
+                BookingReservation = await _service.GetBookingReservationByMail(id);
+            }
         }
     }
 }

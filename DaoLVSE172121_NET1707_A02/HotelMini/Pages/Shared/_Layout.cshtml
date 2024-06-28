@@ -19,15 +19,19 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
+       
                         @if (Context.Session.GetString("Email") != null)
                         {
-                            @if (Context.Session.GetString("AccountId") != null)
+                            @if (Context.Session.GetString("CustomerId") != null)
                             {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Customers/Edit" asp-route-id="@Context.Session.GetString("CustomerId")">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/BookingDetails/Index" asp-route-id="@Context.Session.GetString("CustomerId")">History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/BookingReservations/Index" asp-route-id="@Context.Session.GetString("CustomerId")">BookingReservations</a>
                                 </li>
                                 @* <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Tags/Index">Tags</a>
@@ -65,9 +69,6 @@
                                 </li>
                             }
                         }
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
                     </ul>
                     <ul class="navbar-nav">
                         @if (Context.Session.GetString("Email") != null)

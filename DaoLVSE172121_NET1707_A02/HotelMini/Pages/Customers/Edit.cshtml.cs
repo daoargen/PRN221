@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BusinessObject;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using BusinessObject;
 using Services.Interface;
 
 namespace HotelMini.Pages.Customers
@@ -32,11 +27,33 @@ namespace HotelMini.Pages.Customers
                     return NotFound();
                 }
 
-                var customer = await _service.Customers.FirstOrDefaultAsync(m => m.CustomerId == id);
+                var customer = await _service.GetCustomerById(id);
                 if (customer == null)
                 {
                     return NotFound();
                 }
+
+                Customer = customer;
+                return Page();
+            }
+            else
+            {
+                if (HttpContext.Session.GetString("CustomerId").ToString() != id.ToString())
+                {
+                    return RedirectToPage("/Index");
+                }
+
+                if (id == null)
+                {
+                    return NotFound();
+                }
+
+                var customer = await _service.GetCustomerById(id);
+                if (customer == null)
+                {
+                    return NotFound();
+                }
+
                 Customer = customer;
                 return Page();
             }
@@ -51,30 +68,17 @@ namespace HotelMini.Pages.Customers
                 return Page();
             }
 
-            _service.Attach(Customer).State = EntityState.Modified;
-
             try
             {
-                await _service.SaveChangesAsync();
+                await _service.UpdateCustomer(Customer);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CustomerExists(Customer.CustomerId))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+
             }
 
             return RedirectToPage("./Index");
         }
 
-        private bool CustomerExists(int id)
-        {
-            return _service.Customers.Any(e => e.CustomerId == id);
-        }
     }
 }

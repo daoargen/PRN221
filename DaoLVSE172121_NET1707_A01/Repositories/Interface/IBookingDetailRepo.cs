@@ -7,5 +7,6 @@ namespace Repositories.Interface
         Task<List<BookingDetail>> GetBookingDetail();
         Task DeleteBookingDetails(BookingDetail bookingDetail);
         Task AddBookingDetails(BookingDetail bookingDetail);
+        Task<List<BookingDetail>> GetBookingDetailByCustomerId(string mail);
     }
 }

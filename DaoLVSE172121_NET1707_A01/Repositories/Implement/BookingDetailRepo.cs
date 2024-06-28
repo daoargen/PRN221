@@ -12,9 +12,14 @@ namespace Repositories.Implement
             {
                 using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
                 {
-                    return await _content.BookingDetails.ToListAsync();
+                    return await _content.BookingDetails
+                         .Include(bd => bd.Room)
+                        .ThenInclude(r => r.RoomType)
+                        .Include(bd => bd.BookingReservation)
+                        .ToListAsync();
                 }
             }
+
             catch (Exception ex)
             {
                 return null;
@@ -47,6 +52,25 @@ namespace Repositories.Implement
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+        public async Task<List<BookingDetail>> GetBookingDetailByCustomerId(string mail)
+        {
+            try
+            {
+                using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
+                {
+                    return await _content.Customers.Where(c => c.EmailAddress == mail)
+                .SelectMany(c => c.BookingReservations)
+                .SelectMany(br => br.BookingDetails)
+                .Include(bd => bd.Room)
+                .Include(bd => bd.BookingReservation)
+                .ToListAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
     }

@@ -44,7 +44,7 @@ namespace Services.Implement
             await _repo.DeleteCustomerById(id);
         }
 
-        public async Task<Customer> GetCustomerById(int id)
+        public async Task<Customer> GetCustomerById(int? id)
         {
             return await _repo.GetCustomerById(id);
         }

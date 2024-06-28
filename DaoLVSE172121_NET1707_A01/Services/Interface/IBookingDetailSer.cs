@@ -7,5 +7,6 @@ namespace Services.Interface
         Task<List<BookingDetail>> GetBookingDetails();
         Task DeleteBookingDetails(BookingDetail bookingDetail);
         Task AddBookingDetails(BookingDetail bookingDetail);
+        Task<List<BookingDetail>> GetBookingDetailsByCustomerId(string? mail);
     }
 }

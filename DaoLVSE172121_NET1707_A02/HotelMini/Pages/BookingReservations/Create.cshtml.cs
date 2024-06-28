@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BusinessObject;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using BusinessObject;
+using Services.Interface;
 
 namespace HotelMini.Pages.BookingReservations
 {
     public class CreateModel : PageModel
     {
-        private readonly BusinessObject.FuminiHotelManagementContext _context;
+        private readonly IBookingReservationSer _service;
 
-        public CreateModel(BusinessObject.FuminiHotelManagementContext context)
+        public CreateModel(IBookingReservationSer bookingReservation)
         {
-            _context = context;
+            _service = bookingReservation;
         }
 
         public IActionResult OnGet()
         {
-        ViewData["CustomerId"] = new SelectList(_context.Customers, "CustomerId", "EmailAddress");
+            //ViewData["CustomerId"] = new SelectList(_service.Customers, "CustomerId", "EmailAddress");
             return Page();
         }
 
@@ -35,9 +31,7 @@ namespace HotelMini.Pages.BookingReservations
                 return Page();
             }
 
-            _context.BookingReservations.Add(BookingReservation);
-            await _context.SaveChangesAsync();
-
+            await _service.AddBookingReservation(BookingReservation);
             return RedirectToPage("./Index");
         }
     }

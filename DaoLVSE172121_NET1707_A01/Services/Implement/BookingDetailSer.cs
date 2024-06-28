@@ -26,5 +26,10 @@ namespace Services.Implement
         {
             await _repo.AddBookingDetails(bookingDetail);
         }
+
+        public async Task<List<BookingDetail>> GetBookingDetailsByCustomerId(string mail)
+        {
+            return await _repo.GetBookingDetailByCustomerId(mail);
+        }
     }
 }
