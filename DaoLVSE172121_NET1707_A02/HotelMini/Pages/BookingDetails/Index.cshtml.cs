@@ -1,5 +1,5 @@
 ﻿using BusinessObject;
-using HotelMini.Hubs;
+using Common.Hubs;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.SignalR;
 using Services.Interface;
@@ -30,21 +30,6 @@ namespace HotelMini.Pages.BookingDetails
                 var id = HttpContext.Session.GetString("Email");
                 BookingDetail = await _service.GetBookingDetailsByCustomerId(id);
             }
-        }
-        public async Task OnPostRemoveExpiredAsync()
-        {
-            var today = DateOnly.FromDateTime(DateTime.Now);
-            var expiredDetails = BookingDetail.Where(bd => bd.EndDate < today).ToList();
-            foreach (var detail in expiredDetails)
-            {
-                // Xóa các booking detail đã hết hạn từ cơ sở dữ liệu
-                await _service.DeleteBookingDetails(detail);
-                // Gửi thông báo tới các client qua SignalR
-                await _hubContext.Clients.All.SendAsync("ReceiveBookingDetailUpdate", "Booking details updated.");
-            }
-
-            // Tải lại danh sách cập nhật sau khi xóa
-            BookingDetail = await _service.GetBookingDetails();
         }
     }
 }

@@ -1,0 +1,16 @@
+﻿@page
+@model HotelMini.Pages.Customers.ConfirmModel
+@{
+    ViewData["Title"] = "Confirm";
+}
+
+<h1>Confirm</h1>
+
+@if (Model.IsConfirmed)
+{
+    <p>Your account has been confirmed successfully.</p>
+}
+else
+{
+    <p>Your account has been confirmed successfully</p>
+}

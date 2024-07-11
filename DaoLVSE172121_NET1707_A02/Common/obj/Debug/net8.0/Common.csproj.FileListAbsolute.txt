@@ -1,0 +1,16 @@
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\bin\Debug\net8.0\Common.deps.json
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\bin\Debug\net8.0\Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\bin\Debug\net8.0\Common.pdb
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\bin\Debug\net8.0\BusinessObject.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\bin\Debug\net8.0\BusinessObject.pdb
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.csproj.AssemblyReference.cache
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.sourcelink.json
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.csproj.Up2Date
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\refint\Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\Common.pdb
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\Common\obj\Debug\net8.0\ref\Common.dll

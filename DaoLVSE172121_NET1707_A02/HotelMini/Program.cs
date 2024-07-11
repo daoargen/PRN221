@@ -2,6 +2,7 @@ using Repositories.Implement;
 using Repositories.Interface;
 using Services.Implement;
 using Services.Interface;
+using Services.OtherService;
 
 namespace HotelMini
 {
@@ -30,6 +31,8 @@ namespace HotelMini
             builder.Services.AddScoped<ICustomerSer, CustomerSer>();
             builder.Services.AddScoped<IRoomInformationSer, RoomInformationSer>();
             builder.Services.AddScoped<IRoomTypeSer, RoomTypeSer>();
+            builder.Services.AddScoped<EmailService, EmailService>();
+            builder.Services.AddScoped<BookingDetailChecker, BookingDetailChecker>();
 
             var app = builder.Build();
 

@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObject", "..\DaoLVS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelMini", "HotelMini\HotelMini.csproj", "{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{1291B6F1-6D92-4E0E-8D2D-CE473CFA9D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomStatusWorker", "RoomStatusWorker\RoomStatusWorker.csproj", "{D14A32F2-F999-43AD-A861-7020EB4738CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0D11E46-2C1C-48F0-A5FA-C7AF9BC7BE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1291B6F1-6D92-4E0E-8D2D-CE473CFA9D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1291B6F1-6D92-4E0E-8D2D-CE473CFA9D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1291B6F1-6D92-4E0E-8D2D-CE473CFA9D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1291B6F1-6D92-4E0E-8D2D-CE473CFA9D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D14A32F2-F999-43AD-A861-7020EB4738CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14A32F2-F999-43AD-A861-7020EB4738CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14A32F2-F999-43AD-A861-7020EB4738CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14A32F2-F999-43AD-A861-7020EB4738CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

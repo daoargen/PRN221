@@ -522,3 +522,16 @@ D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\obj\D
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\obj\Debug\net8.0\HotelMini.csproj.Up2Date
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
 E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A02\HotelMini\bin\Debug\net8.0\Common.pdb

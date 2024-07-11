@@ -14,7 +14,6 @@ namespace Repositories.Implement
                 {
                     return await _content.BookingDetails
                          .Include(bd => bd.Room)
-                        .ThenInclude(r => r.RoomType)
                         .Include(bd => bd.BookingReservation)
                         .ToListAsync();
                 }
@@ -32,6 +31,7 @@ namespace Repositories.Implement
                 using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
                 {
                     _content.BookingDetails.Remove(bookingDetail);
+                    await _content.SaveChangesAsync();
                 }
             }
             catch (Exception ex)
@@ -47,6 +47,7 @@ namespace Repositories.Implement
                 using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
                 {
                     await _content.BookingDetails.AddAsync(bookingDetail);
+                    await _content.SaveChangesAsync();
                 }
             }
             catch (Exception ex)

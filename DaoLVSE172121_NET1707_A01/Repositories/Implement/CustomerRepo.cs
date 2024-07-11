@@ -57,15 +57,12 @@ namespace Repositories.Implement
             {
                 using (FuminiHotelManagementContext _content = new FuminiHotelManagementContext())
                 {
-                    var existCustomer = await _content.Customers.FirstOrDefaultAsync(x => x.CustomerId == id);
-                    if (existCustomer != null)
-                    {
-                        return existCustomer;
-                    }
-                    else
+                    var existCustomer = await _content.Customers.FindAsync(id);
+                    if (existCustomer == null)
                     {
                         throw new ArgumentException("Customer not found", nameof(id));
                     }
+                    return existCustomer;
                 }
             }
             catch (Exception ex)

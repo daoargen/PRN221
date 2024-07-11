@@ -58,3 +58,5 @@ D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\De
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\refint\Services.dll
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\Services.pdb
 D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\Services\obj\Debug\net8.0\ref\Services.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Common.dll
+D:\Fpt\material\ki7\PRN221\code\PRN221\DaoLVSE172121_NET1707_A01\Services\bin\Debug\net8.0\Common.pdb

@@ -10,6 +10,5 @@ namespace Services.Interface
         Task DeleteRoomInformationById(int id);
         Task UpdateRoomInformation(RoomInformationModel roomInformation);
         Task<RoomInformation> GetRoomInformationById(int id);
-        Task<List<RoomInformationModel>> GetRoomInformationDTO();
     }
 }

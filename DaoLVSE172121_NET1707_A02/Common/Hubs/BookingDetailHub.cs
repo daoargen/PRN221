@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 
-namespace HotelMini.Hubs
+namespace Common.Hubs
 {
     public class BookingDetailHub : Hub
     {
