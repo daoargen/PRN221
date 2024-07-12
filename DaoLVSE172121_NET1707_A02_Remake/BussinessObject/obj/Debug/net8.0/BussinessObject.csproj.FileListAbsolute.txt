@@ -1,0 +1,15 @@
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\bin\Debug\net8.0\BussinessObject.deps.json
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\bin\Debug\net8.0\BussinessObject.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\bin\Debug\net8.0\BussinessObject.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.AssemblyInfoInputs.cache
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.AssemblyInfo.cs
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.csproj.CoreCompileInputs.cache
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.sourcelink.json
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\refint\BussinessObject.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.pdb
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\ref\BussinessObject.dll
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\bin\Debug\net8.0\BussinessObject.runtimeconfig.json
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.csproj.AssemblyReference.cache
+E:\project\C#\PRN221\DaoLVSE172121_NET1707_A02_Remake\BussinessObject\obj\Debug\net8.0\BussinessObject.genruntimeconfig.cache

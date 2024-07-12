@@ -1,0 +1,30 @@
+﻿@page
+@model HotelMini.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container justify-content-center w-50">
+    <div class="login-container">
+        <h2 class="text-center">Login</h2>
+        <form method="post">
+            <div class="form-group py-4">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" asp-for="Email" required>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group py-4">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" asp-for="Password" required>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            @if (!ModelState.IsValid)
+            {
+                <div class="alert alert-danger mt-3" role="alert">
+                    You have no permission to this system!
+                </div>
+            }
+        </form>
+    </div>
+</div>

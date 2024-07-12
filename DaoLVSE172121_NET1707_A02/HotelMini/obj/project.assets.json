@@ -10390,19 +10390,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\DaoPC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\HotelMini.csproj",
+      "projectUniqueName": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\HotelMini.csproj",
       "projectName": "HotelMini",
-      "projectPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\HotelMini.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\obj\\",
+      "projectPath": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\HotelMini.csproj",
+      "packagesPath": "C:\\Users\\DaoPC\\.nuget\\packages\\",
+      "outputPath": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\HotelMini\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DaoPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10410,17 +10415,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj": {
-              "projectPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj"
+            "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj": {
+              "projectPath": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A01\\Services\\Services.csproj"
             },
-            "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A02\\Common\\Common.csproj": {
-              "projectPath": "D:\\Fpt\\material\\ki7\\PRN221\\code\\PRN221\\DaoLVSE172121_NET1707_A02\\Common\\Common.csproj"
+            "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\Common\\Common.csproj": {
+              "projectPath": "E:\\project\\C#\\PRN221\\DaoLVSE172121_NET1707_A02\\Common\\Common.csproj"
             }
           }
         }
@@ -10478,7 +10484,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

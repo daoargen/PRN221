@@ -1,0 +1,77 @@
+﻿@page
+@model HotelMini.Pages.BookingDetails.IndexModel
+@using HotelMini.Hubs // Thêm using cho Hubs
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDetail[0].StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDetail[0].EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDetail[0].ActualPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDetail[0].BookingReservation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookingDetail[0].Room)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="bookingList">
+        @* Danh sách BookingDetail sẽ được cập nhật tại đây *@
+    </tbody>
+</table>
+
+@* **Thêm client SignalR tại đây** *@
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script>
+    // Khởi tạo kết nối SignalR
+    var connection = new signalR.HubConnectionBuilder()
+        .withUrl("/bookingDetailHub") // Thay thế bằng đường dẫn hub của bạn
+        .build();
+
+    // Xử lý khi nhận được thông báo từ server
+    connection.on("ReceiveBookingDetailUpdate", function (bookingDetails) {
+        // Xóa dữ liệu cũ
+        $("#bookingList").empty();
+
+        // Thêm dữ liệu mới
+        bookingDetails.forEach(function (bookingDetail) {
+            var row = '<tr>' +
+                '<td>' + bookingDetail.startDate + '</td>' +
+                '<td>' + bookingDetail.endDate + '</td>' +
+                '<td>' + bookingDetail.actualPrice + '</td>' +
+                '<td>' + bookingDetail.bookingReservation.bookingReservationId + '</td>' +
+                '<td>' + bookingDetail.room.roomNumber + '</td>' +
+                '<td>' +
+                '<a href="/BookingDetails/Edit/' + bookingDetail.bookingDetailId + '">Edit</a> | ' +
+                '<a href="/BookingDetails/Details/' + bookingDetail.bookingDetailId + '">Details</a> | ' +
+                '<a href="/BookingDetails/Delete/' + bookingDetail.bookingDetailId + '">Delete</a>' +
+                '</td>' +
+                '</tr>';
+            $("#bookingList").append(row);
+        });
+    });
+
+    // Bắt đầu kết nối
+    connection.start().then(function () {
+        console.log("Kết nối SignalR thành công!");
+    }).catch(function (err) {
+        return console.error(err.toString());
+    });
+</script>
